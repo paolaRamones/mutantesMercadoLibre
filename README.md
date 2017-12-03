@@ -20,75 +20,73 @@ mvn spring-boot: ejecutar
 
 
 -   Se crea en mlba una bd mongoDB 
-
-    mongodb://mongoDbmeli:mongomeli@ds119446.mlab.com:19446/mutantsmeli
     
 -   Se agrega el complemento Postman a google chrome
 
         
 
-## API URL
+## API URL a utilizar
 
-https://meli-mutants.herokuapp.com/
+https:https://mutantesmercadolibre.herokuapp.com/
 
 
 ## Datos de prueba
 
 Request: 
-- POST https://meli-mutants.herokuapp.com/mutant
+- POST https://mutantesmercadolibre.herokuapp.com/mutant
 
-Request body:
+Prueba 1:
 
 ```javascript
   {"dna":["ATGCGA", "CAGGGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]}
 ```
 
-Response:
+Respuesta:
 
 ```javascript
   200 OK
 ```
-Request body:
+Prueba 2:
 
 ```javascript
-  {"dna":["ATGCCA", "CAGGGC", "TTATCT", "AGAAAG", "CCCCTA", "TCACTG"]}
+  {"dna":["ATGCCA", "AAGGGC", "TTATCT", "AGAAAG", "CCCCTA", "TCACTG"]}
 ```
 
-Response:
+Respuesta:
 
 ```javascript
   403 Forbidden
 ```
-Request body:
+Prueba 3:
 
 ```javascript
   {"dna":["ATGCCA", "CAGGGC", "TTATCT", "AGAAAG", "CCCCTA", "TCACAG"]}
 ```
 
-Response:
+Respuesta:
 
 ```javascript
   403 Forbidden
 ```
 
-Request body:
+Prueba 4:
 
 ```javascript
   {"dna":["ATGCGA", "CAGGGC", "TTATGT", "AGAAGG", "CCCCTA", "XCACTG"]}
 ```
 
-Response: (Letter Wrong)
+Respuesta: (Letter Wrong)
 
 ```javascript
   403 Forbidden
 ```
 
-## Datos de prueba 
+## Datos de prueba para estadisticas
 
 Request: 
-- GET http://meli-mutants.herokuapp.com/stats
+- POST https://mutantesmercadolibre.herokuapp.com/stats
 
-Response: 200 (application/json)
+Respuesta: 200 (application/json)
 
 ```javascript
 {
@@ -97,7 +95,7 @@ Response: 200 (application/json)
     "ratio": 0.5
 }
 
------
+## 
 
 > <b> Tecnologías utilizadas </b>
 *   Java
@@ -111,8 +109,9 @@ Response: 200 (application/json)
 
 
 -   Segun el enunciado se pueden ingresar:  
--   1) Las letras de los Strings: (A,T,C,G), las cuales representa cada base nitrogenada del ADN.	
-			En caso de ingresar cualquier letra no considerada del ADN se envia un HTTP 403 - Forbidden y este no es tenido en cuenta
+-     Las letras de los Strings: (A,T,C,G), las cuales representa cada base nitrogenada del ADN.	
+			En caso de ingresar cualquier letra no considerada del ADN se envia un:
+							 HTTP 403 - Forbidden y este no es tenido en cuenta
 			a la hora de obtener la cantidad de mutantes, humanos y ratio.
 
 
