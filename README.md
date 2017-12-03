@@ -97,9 +97,8 @@ Respuesta: 200 (application/json)
 ```
 ## 
 
-```javascript
-Tecnologías utilizadas </b>
-```
+
+> <b>Tecnologías utilizadas </b>
 *   Java
 *   Maven
 *   Spring boot
@@ -109,11 +108,11 @@ Tecnologías utilizadas </b>
 
 
 ```javascript
-Consideración </b>
+Consideración
 ```
 
--   Segun el enunciado se pueden ingresar:  
--     Las letras de los Strings: (A,T,C,G), las cuales representa cada base nitrogenada del ADN.	
+-   Según el enunciado se pueden ingresar:  
+     Las letras de los Strings: (A,T,C,G), las cuales representa cada base nitrogenada del ADN.	
 			En caso de ingresar cualquier letra no considerada del ADN se envia un:
 							 HTTP 403 - Forbidden y este no es tenido en cuenta
 			a la hora de obtener la cantidad de mutantes, humanos y ratio.
