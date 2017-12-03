@@ -1,4 +1,4 @@
-# Mutants.
+# Mutantes - Humanos.
 > <b>Version: 0.0.1</b>
 
 -   Sistema que detecta si un humano es mutante basándose en su secuencia de ADN.
@@ -12,7 +12,7 @@
 > <b>Uso:</b>
 
 -   Para iniciar la aplicación, primero se deberan de cumplir con las instrucciones anteriores. 
-	Se debera ejecutar la clase principal MutantsApplication  y esperar hasta que se inicie la aplicación.
+	Se debera ejecutar la clase principal MutantesApp  y esperar hasta que se inicie la aplicación.
 
 Puede ejecutarlo usando el siguiente comando en la línea de comando:
 
@@ -32,7 +32,7 @@ mvn spring-boot: ejecutar
 https://meli-mutants.herokuapp.com/
 
 
-## Datos de prueba #1
+## Datos de prueba
 
 Request: 
 - POST https://meli-mutants.herokuapp.com/mutant
@@ -83,7 +83,7 @@ Response: (Letter Wrong)
   403 Forbidden
 ```
 
-## Use Case #2
+## Datos de prueba 
 
 Request: 
 - GET http://meli-mutants.herokuapp.com/stats
