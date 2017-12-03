@@ -94,10 +94,12 @@ Respuesta: 200 (application/json)
     "count_human_dna": 2,
     "ratio": 0.5
 }
-
+```
 ## 
 
-> <b> Tecnologías utilizadas </b>
+```javascript
+Tecnologías utilizadas </b>
+```
 *   Java
 *   Maven
 *   Spring boot
@@ -105,8 +107,10 @@ Respuesta: 200 (application/json)
 *   MongoDB
 *   GitHub
 
-> <b>Consideracion</b>
 
+```javascript
+Consideración </b>
+```
 
 -   Segun el enunciado se pueden ingresar:  
 -     Las letras de los Strings: (A,T,C,G), las cuales representa cada base nitrogenada del ADN.	
